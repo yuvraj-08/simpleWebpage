@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 nav{
-    background-color: #000;
+    background-color: #052c4d;
     color:#fff;
     display: flex;
     justify-content: space-between;
@@ -17,6 +17,10 @@ nav ul{
 nav ul li{
     float: left;
     margin-right: 20px;
+}
+nav ul li a{
+    font-size: 18px;
+    
 }
 a{
     text-decoration: none;
@@ -44,7 +48,7 @@ a{
     font-size: 24px;
 }
 #About{
-    min-height: 100vh;
+    height: 100vh;
     padding: 20px;
 }
 
@@ -54,6 +58,7 @@ a{
 }
 #About .heading{
     margin-top: 80px;
+    margin-bottom: 80px;
 }
 .row{
     display: flex;
@@ -62,9 +67,11 @@ a{
 }
 .imageContainer,.infoContainer{
     width: 50%;
+    text-align: center;
 }
 .imageContainer img{
-    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
 }
 .infoContainer{
     text-align: left;
@@ -88,7 +95,7 @@ button{
     font-weight: bold;
 }
 #Interests{
-    min-height: 85vh;
+    height: 85vh;
     text-align: center;
     margin-top: 80px;
 }
@@ -118,19 +125,16 @@ ul.interests li:nth-child(odd){
 }
 #Contact{
     text-align: center;
-    min-height: 90vh;
+    height: 90vh;
 }
-#Contact p{
-    font-style: italic;
-    text-transform: lowercase;
-}
+
 .grid-container {
     display: grid;
     height: 400px;
     align-content: center;
     column-gap: 20px;
     grid-template-columns: auto auto auto;
-    background-color: #2196F3;
+    background-color: #50C4ED;
     padding: 10px;
     margin-top: 40px;
 }
@@ -141,29 +145,19 @@ ul.interests li:nth-child(odd){
     border: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
-    /* text-align: center; */
+    text-align: center;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
-.contactInfo{
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 28px;
-}
+
 .contactIcon{
     font-size: 40px;
 }
-/* }
-.contactElement{
-    min-height: 400px;
-    min-width: 33%;
-    word-break: break-all;
-    line-height: 5;
-} */
+
 .email{
     background-color: #5F5D9C;
+    word-break: break-all;
 }
 .number{
     background-color: #6196A6;
@@ -177,4 +171,65 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 30px;
+}
+footer p{
+    font-size: 18px;
+}
+
+/* ####################################  MAKING THE SITE RESPONSIVE  ################################## */
+@media screen and (max-width: 768px) {
+    .imageContainer img{
+        width: 100%;
+    }   
+    #About,#Interests,#Contact{
+        height: fit-content;
+    } 
+    #Contact h2{
+        margin-top: 80px;    
+    }
+}
+@media screen and (max-width: 560px){
+    .row{
+        flex-direction: column;
+    }
+    .imageContainer{
+        margin-bottom: 20px;
+        width: 80%;
+    }   
+    .infoContainer{
+        width: 80%;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        height: fit-content;
+        margin-bottom: 40px;
+    }
+    .grid-item {
+        height: fit-content;
+        font-size: 22px;
+    }
+    
+}
+@media screen and (max-width: 387px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a{
+        font-size: 15px !important;
+    }
+    nav .brandContainer{
+        width: 90%;
+    }
+    .imageContainer{
+        width: 90%;
+    }
+    .infoContainer{
+        padding: 0;
+        width: 90%;
+    }
+    footer{
+        flex-direction: column;
+    }
 }

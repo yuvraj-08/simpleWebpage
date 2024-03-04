@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topic Number 11</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/en/1/1a/Guru_Nanak_Dev_University_Logo.png" type="image/x-icon">
 </head>
 <body>
     <!-- NAVIGATIONS LINKS TO NAVIGATE THROUGH WEBPAGE -->
@@ -15,7 +16,7 @@
         </div>
         <div class="linkContainer">
             <ul>
-                <li><a href=""> Home </a></li>
+                <li><a href="#"> Home </a></li>
                 <li><a href="#About"> About </a></li>
                 <li><a href="#Interests"> Interests </a></li>
                 <li><a href="#Contact"> Contact </a></li>
@@ -37,12 +38,15 @@
                 <img src="https://st2.depositphotos.com/1537427/5859/v/450/depositphotos_58597599-stock-illustration-male-user-icon.jpg" alt="Profile Picture">
             </div>
             <div class="infoContainer">
+                <!-- Your Name Here -->
                 <h3>'Name Here'</h3>
                  <!-- A short paragraph about you -->
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                      Assumenda totam nostrum deleniti blanditiis ipsum, voluptates possimus nisi ab unde aliquid magnam.
                      Blanditiis neque aperiam sunt velit, mollitia id voluptate magni!</p>
+                <!-- Your Location  -->
                 <p><span class="marker">&#9908;</span> Amritsar, Punjab</p>
+                <!-- button to next section { CAN SKIP THIS BUTTON } -->
                 <button onclick="window.location.href='#Interests';" class="button"> See Interests </button>
         </div>
     </section>
@@ -52,6 +56,7 @@
     <section id="Interests">
         <h2 class="heading">Interests</h2>
         <div class="interestContainer">
+            <!-- List Of Interests  -->
             <ul class="interests">
                 <li>Interest 1</li>
                 <li>Interest 2</li>
@@ -66,41 +71,30 @@
     <!-- Contact Section Starts  -->
     <section id="Contact">
         <h2 class="heading">Contact Me</h2>
-        <p>You can contact me through</p>
+        <!-- <p>You can contact me through</p> -->
         <div class="grid-container">
             <div class="grid-item email">
                 <div class="email contactElement"> 
-                    <span class="contactIcon">&#128231;</span>
-                    <p>yourname123@gmail.com</p>
+                    <!-- &#128231; = 📧 -->
+                    <span class="contactIcon">&#128231;</span> 
+                    <p>yourname123@gmail.com</p><!-- Your Email Here -->
                 </div>
             </div>
             <div class="grid-item">
                 <div class=" contactElement">
-                    <span class="contactIcon ">&phone;</span>
-                    <p> +91 12345-67890</p>
+                    <!-- &phone; = ☎ -->
+                    <span class="contactIcon ">&phone;</span> 
+                    <p> +91 12345-67890</p> <!-- Your Contact Number -->
                 </div>
             </div>
             <div class="grid-item address">
                 <div class=" contactElement">
+                    <!-- &cirmid; = ⫯ -->
                     <span class="contactIcon">&cirmid;</span>
-                    <p>69 Street, ABC Road, India</p>
+                    <p>69 Street, ABC Road, India</p> <!-- Your Address -->
                 </div>
             </div>  
         </div>
-        <!-- <div class="contactInfo">
-            <div class="email contactElement"> 
-                <span class="contactIcon">&#128231;</span>
-                <p>yourname123@gmail.com</p>
-            </div>
-            <div class="number contactElement">
-                <span class="contactIcon ">&phone;</span>
-                <p> +91 12345-67890</p>
-            </div>
-            <div class="address contactElement">
-                <span class="contactIcon">&cirmid;</span>
-                <p>69 Street, ABC Road, India</p>
-            </div>
-        </div> -->
     </section>
     <!-- Contact Section Starts  -->
 
@@ -115,4 +109,5 @@
     </footer>
     <!-- Footer Ends -->
 </body>
+
 </html>
