@@ -9,6 +9,10 @@
 <body>
     <!-- NAVIGATIONS LINKS TO NAVIGATE THROUGH WEBPAGE -->
     <nav>
+        <div class="brandContainer">
+            <!-- Your Name Initials  -->
+            <p class="brandName">YS</p>
+        </div>
         <div class="linkContainer">
             <ul>
                 <li><a href=""> Home </a></li>
@@ -27,7 +31,7 @@
     </section>
     <!-- About Section Starts  -->
     <section id="About">
-        <h2>About Me</h2>
+        <h2 class="heading">About Me</h2>
         <div class="row">
             <div class="imageContainer">
                 <img src="https://st2.depositphotos.com/1537427/5859/v/450/depositphotos_58597599-stock-illustration-male-user-icon.jpg" alt="Profile Picture">
@@ -38,15 +42,15 @@
                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                      Assumenda totam nostrum deleniti blanditiis ipsum, voluptates possimus nisi ab unde aliquid magnam.
                      Blanditiis neque aperiam sunt velit, mollitia id voluptate magni!</p>
-                <p>Amritsar, Punjab</p>
-                <a href="#Interests" class="button"> See Interests </a>
+                <p><span class="marker">&#9908;</span> Amritsar, Punjab</p>
+                <button onclick="window.location.href='#Interests';" class="button"> See Interests </button>
         </div>
     </section>
     <!-- About Section Ends  -->
 
     <!-- Interests Section Starts  -->
     <section id="Interests">
-        <h2>Interests</h2>
+        <h2 class="heading">Interests</h2>
         <div class="interestContainer">
             <ul class="interests">
                 <li>Interest 1</li>
@@ -61,19 +65,42 @@
 
     <!-- Contact Section Starts  -->
     <section id="Contact">
-        <h2>Contact ME</h2>
+        <h2 class="heading">Contact Me</h2>
         <p>You can contact me through</p>
-        <div class="contactInfo">
-            <div class="email">
+        <div class="grid-container">
+            <div class="grid-item email">
+                <div class="email contactElement"> 
+                    <span class="contactIcon">&#128231;</span>
+                    <p>yourname123@gmail.com</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class=" contactElement">
+                    <span class="contactIcon ">&phone;</span>
+                    <p> +91 12345-67890</p>
+                </div>
+            </div>
+            <div class="grid-item address">
+                <div class=" contactElement">
+                    <span class="contactIcon">&cirmid;</span>
+                    <p>69 Street, ABC Road, India</p>
+                </div>
+            </div>  
+        </div>
+        <!-- <div class="contactInfo">
+            <div class="email contactElement"> 
+                <span class="contactIcon">&#128231;</span>
                 <p>yourname123@gmail.com</p>
             </div>
-            <div class="number">
+            <div class="number contactElement">
+                <span class="contactIcon ">&phone;</span>
                 <p> +91 12345-67890</p>
             </div>
-            <div class="address">
+            <div class="address contactElement">
+                <span class="contactIcon">&cirmid;</span>
                 <p>69 Street, ABC Road, India</p>
             </div>
-        </div>
+        </div> -->
     </section>
     <!-- Contact Section Starts  -->
 
