@@ -4,11 +4,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
 nav{
     background-color: #052c4d;
     color:#fff;
-    display: flex;
-    justify-content: space-between;
+   
 }
 nav ul{
     list-style: none;
@@ -18,40 +32,24 @@ nav ul li{
     float: left;
     margin-right: 20px;
 }
-nav ul li a{
-    font-size: 18px;
-    
-}
-a{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-}
 .brandContainer{
     margin-left: 30px;
 }
 .brandName{
     font-size: 30px;
-    line-height: 1.5; 
+    line-height: 2; 
 }
 .sectionOne{
     min-height: 100vh;
-    background: url(" https://d33wubrfki0l68.cloudfront.net/0a619155c82b694e2267f3ed5c752919b707e33b/ef36f/static/svg_waves-3c1f0a785319462f6dce04d227eaf664.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: center/cover no-repeat url(" https://d33wubrfki0l68.cloudfront.net/0a619155c82b694e2267f3ed5c752919b707e33b/ef36f/static/svg_waves-3c1f0a785319462f6dce04d227eaf664.jpg");
     color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     font-size: 24px;
 }
 #About{
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
 }
-
 .heading{
     font-size: 42px;
     text-align: center;
@@ -59,11 +57,6 @@ a{
 #About .heading{
     margin-top: 80px;
     margin-bottom: 80px;
-}
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .imageContainer,.infoContainer{
     width: 50%;
@@ -92,10 +85,9 @@ button{
     border: 1px solid #000;
     border-radius: 20px;
     padding: 7px 12px;
-    font-weight: bold;
 }
 #Interests{
-    height: 85vh;
+    min-height: 85vh;
     text-align: center;
     margin-top: 80px;
 }
@@ -111,65 +103,16 @@ button{
     padding: 15px;
     font-size: 24px;
     font-weight: bold;
-    border-radius: 2px;
 }
 ul.interests li:nth-child(even){
-    border-right: 2px solid #000;
     background-color: #9BB0C1;
 }
 ul.interests li:nth-child(odd){
-    border-left: 2px solid #000;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
     background-color: #E1AFD1;
-}
-#Contact{
-    text-align: center;
-    height: 90vh;
-}
-
-.grid-container {
-    display: grid;
-    height: 400px;
-    align-content: center;
-    column-gap: 20px;
-    grid-template-columns: auto auto auto;
-    background-color: #50C4ED;
-    padding: 10px;
-    margin-top: 40px;
-}
-  
-.grid-item {
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contactIcon{
-    font-size: 40px;
-}
-
-.email{
-    background-color: #5F5D9C;
-    word-break: break-all;
-}
-.number{
-    background-color: #6196A6;
-}
-.address{
-    background-color: #A4CE95;
 }
 footer{
     background-color: #000;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
     padding: 30px;
 }
 footer p{
@@ -184,9 +127,7 @@ footer p{
     #About,#Interests,#Contact{
         height: fit-content;
     } 
-    #Contact h2{
-        margin-top: 80px;    
-    }
+    
 }
 @media screen and (max-width: 560px){
     .row{
@@ -198,16 +139,6 @@ footer p{
     }   
     .infoContainer{
         width: 80%;
-    }
-    .grid-container{
-        grid-template-columns: auto;
-        grid-row-gap: 10px;
-        height: fit-content;
-        margin-bottom: 40px;
-    }
-    .grid-item {
-        height: fit-content;
-        font-size: 22px;
     }
     
 }
